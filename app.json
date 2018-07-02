@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/setting/setting",
+    "pages/help/help",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e4617d",
+    "navigationBarTitleText": "通告助手",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#e4617d",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "通告栏",
+        "iconPath": "images/survey.png",
+        "selectedIconPath": "images/survey-on.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "发布",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/add-on.png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "我的",
+        "iconPath": "images/toys.png",
+        "selectedIconPath": "images/toys-on.png"
+      }
+    ]
+  }
+}

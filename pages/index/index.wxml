@@ -1,0 +1,89 @@
+<view style='height:100%;'>
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}" scroll-with-animation='true'>
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">全部</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">模特</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">影视表演</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">主持</view>
+        <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">音乐舞蹈</view>
+        <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">网红推广</view>
+        <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">动漫游戏</view>
+        <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">段视频</view>
+        <view class="tab-item {{currentTab==8?'active':''}}" data-current="8" bindtap="swichNav">其他</view>
+    </scroll-view>
+    <view class="dropDown" bindtap="selectMenu">
+      <span>全国</span>
+      <i style="transform:rotate({{rotate}}deg);display:inline-block;transition: 0.2s all linear;"></i>
+      <span wx:if="{{_startTime}}">|{{_startTime}}|</span>
+      <span wx:if="{{_endTime}}">{{_endTime}}</span>
+      <span wx:if="{{_salary}}">|{{_salary}}</span>
+      <icon class='pinkSearch' type="search" size="14" color= '#e4617d' catchtap="routerToSearch"/>
+      <ul class="selectMenu-detail" style="height:{{selectMenuDis}}" >
+          <li wx:for="{{cityes}}">{{item}}</li>
+      </ul>
+    </view>
+    <view class='coverShadow' style="height:{{coverShadowDis}}"></view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx;overflow:auto;">
+        <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8]}}" style='height:100%;'>
+            <scroll-view scroll-y="true" scroll-x="false" class="scoll-h"  style='height:100%;'>
+               <view class='content-detail'>
+                  <view class='detail-time'>09:46</view>
+                  <view class='detail-box'>
+                    <view class='userInfo'>
+                      <image src='../../images/touxiang.jpg' class='userImg'></image>
+                      <view class='userName'>Yui</view>
+                    </view>
+                    <text decode="{{true}}">&emsp;&emsp;The combination of the equipment is relatively smooth, and the hat requires two valuable useless rods to compare. Lanche can be said to include the AD components of high, medium and low levels</text>
+                    <view class='salaryAndWork'>
+                      <i>1500</i>
+                      <view>男模特</view>
+                    </view>
+                    <view class='locationAndDate'>
+                      <i class="location">杭州</i>
+                      <i class="date">8.28-8.29</i>
+                      <i class='more'>...</i>
+                    </view>
+                  </view>
+               </view>
+                <view class='content-detail'>
+                  <view class='detail-time'>09:46</view>
+                  <view class='detail-box'>
+                    <view class='userInfo'>
+                      <image src='../../images/touxiang.jpg' class='userImg'></image>
+                      <view class='userName'>Yui</view>
+                    </view>
+                    <text decode="{{true}}">&emsp;&emsp;The combination of the equipment is relatively smooth, and the hat requires two valuable useless rods to compare. Lanche can be said to include the AD components of high, medium and low levels</text>
+                    <view class='salaryAndWork'>
+                      <i>1500</i>
+                      <view>男模特</view>
+                    </view>
+                    <view class='locationAndDate'>
+                      <i class="location">杭州</i>
+                      <i class="date">8.28-8.29</i>
+                      <i class='more'>...</i>
+                    </view>
+                  </view>
+               </view>
+                <view class='content-detail'>
+                  <view class='detail-time'>09:46</view>
+                  <view class='detail-box'>
+                    <view class='userInfo'>
+                      <image src='../../images/touxiang.jpg' class='userImg'></image>
+                      <view class='userName'>Yui</view>
+                    </view>
+                    <text decode="{{true}}">&emsp;&emsp;The combination of the equipment is relatively smooth, and the hat requires two valuable useless rods to compare. Lanche can be said to include the AD components of high, medium and low levels</text>
+                    <view class='salaryAndWork'>
+                      <i>1500</i>
+                      <view>男模特</view>
+                    </view>
+                    <view class='locationAndDate'>
+                      <i class="location">杭州</i>
+                      <i class="date">8.28-8.29</i>
+                      <i class='more'>...</i>
+                    </view>
+                  </view>
+               </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

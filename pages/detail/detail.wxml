@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+  <form>
+    <textarea placeholder='请输入通告详情' value='{{tonggaoDetail}}' maxlength='maxlength' auto-focus='true' bindinput='computedNum'></textarea>
+    <view class='outherNum'>{{maxlength-tonggaoDetail.length}}</view>
+    <button hover-class="none" bindtap='submit'>保存</button>
+  </form>
+</view>

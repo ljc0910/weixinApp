@@ -1,0 +1,14 @@
+/* pages/search/search.wxss */ 
+.picker-box{padding: 0 30rpx;height: 124rpx;background:#fff ;box-shadow: 0 -5px 5px 0 #edebec;margin-top: 30rpx;}
+.picker-box:nth-child(2){box-shadow: 0 5px 5px 0 #edebec;margin-top: 10rpx;}
+.pickerDate{width: 210rpx;text-align: center}
+picker{display: inline-block;font-size: 28rpx;margin:0 45rpx ;color: #9b9b9b;line-height:124rpx;}
+.picker-box span{color: #9b9b9b;}
+.dataPicker::before{font-family: 'iconfont';content: '\e829';font-size: 30rpx;color: #9b9b9b;vertical-align: middle;}
+.mornyPicker::before{font-family: 'iconfont';content: '\e702';font-size: 30rpx;color: #9b9b9b;vertical-align: middle;}
+icon{display:inline-block;vertical-align: middle;}
+.picker-content{display:inline-block;width: 620rpx;}
+button{font-size: 32rpx;background:#e4617d;width: 90%;color: #fff;margin: 665rpx auto 0;}
+.coverBox{font-size: 24rpx;display:inline-block;position: absolute;left: 50%;top: 50%;}
+.coverBox view{position: relative;left: -50%;top: -50%;padding:6rpx 22rpx;background: #ccc;border-radius: 18rpx;}
+ .selector view{margin-left: 20rpx;} 

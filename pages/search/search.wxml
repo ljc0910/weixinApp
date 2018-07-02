@@ -1,0 +1,35 @@
+<view>
+  <view class="coverBox">
+    <view wx:if='{{alertBox}}'>请输入开始时间</view>
+    <view wx:if='{{warnBox}}'>结束时间不能小于开始时间</view>
+  </view>
+  <form>
+    <view class='picker-box'>
+      <i class='dataPicker'></i>
+      <view class='picker-content'>
+        <picker class='pickerDate' bindchange='startChange' mode = 'date' value='{{startTime}}'>
+          <view wx:if="{{startTime}}">{{startTime}}</view>
+          <view wx:else>活动开始时间</view>
+        </picker>
+        <span>-</span>
+        <picker class='pickerDate' mode = 'date' bindchange='endChange'>
+          <view wx:if="{{endTime}}">{{endTime}}</view>
+          <view wx:else>活动结束时间</view>
+        </picker>
+      </view>
+      <icon type='clear'  bindtap='timeClear' size='18'></icon>
+    </view>
+
+    <view class='picker-box'>
+      <i class='mornyPicker'></i>
+      <view class='picker-content'>
+        <picker mode = 'selector' class='selector' range='{{testArr}}' value='{{salary}}' bindchange='salaryChange'>
+          <view wx:if="{{salary}}">{{testArr[salary]}}</view>
+          <view wx:else>每天、每场、每月的底薪等</view>
+        </picker>
+      </view>
+      <icon type='clear'  bindtap='salaryClear' size='18'></icon>
+    </view>
+  </form>
+  <button hover-class="none" form-type='submit' bindtap='submit'>确定</button>
+</view>

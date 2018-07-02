@@ -1,0 +1,4 @@
+/* pages/detail/detail.wxss */
+textarea{width: 90%;background: #fff;height: 900rpx;padding:5%;font-size:32rpx ;word-break:break-all;}
+button{font-size: 32rpx;background:#e4617d;width: 90%;color: #fff;margin: 20rpx auto 0;}
+.outherNum{text-align: right;color:#aaa;padding:0 5%;line-height:80rpx ;font-size:26rpx ;}
