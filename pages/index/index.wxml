@@ -21,7 +21,7 @@
           <li wx:for="{{cityes}}">{{item}}</li>
       </ul>
     </view>
-    <view class='coverShadow' style="height:{{coverShadowDis}}"></view>
+    <view class='coverShadow' style="height:{{coverShadowDis}}" bindtap="selectMenu"></view>
     <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
      style="height:{{winHeight}}rpx;overflow:auto;">
         <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8]}}" style='height:100%;'>
