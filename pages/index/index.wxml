@@ -22,10 +22,9 @@
       </ul>
     </view>
     <view class='coverShadow' style="height:{{coverShadowDis}}" bindtap="selectMenu"></view>
-    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
-     style="height:{{winHeight}}rpx;overflow:auto;">
-        <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8]}}" style='height:100%;'>
-            <scroll-view scroll-y="true" scroll-x="false" class="scoll-h"  style='height:100%;'>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx;">
+        <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8]}}" style="overflow:auto;">
+            <scroll-view scroll-y="true" scroll-x="false" class="scoll-h">
                <view class='content-detail'>
                   <view class='detail-time'>09:46</view>
                   <view class='detail-box'>

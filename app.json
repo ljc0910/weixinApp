@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/setting/setting",
-    "pages/help/help",
+    "pages/release/release",
+    "pages/myInfo/myInfo",
     "pages/logs/logs",
     "pages/search/search",
     "pages/detail/detail"
@@ -23,13 +23,13 @@
         "selectedIconPath": "images/survey-on.png"
       },
       {
-        "pagePath": "pages/setting/setting",
+        "pagePath": "pages/release/release",
         "text": "发布",
         "iconPath": "images/add.png",
         "selectedIconPath": "images/add-on.png"
       },
       {
-        "pagePath": "pages/help/help",
+        "pagePath": "pages/myInfo/myInfo",
         "text": "我的",
         "iconPath": "images/toys.png",
         "selectedIconPath": "images/toys-on.png"
