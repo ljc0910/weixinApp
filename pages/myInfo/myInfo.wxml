@@ -1,0 +1,12 @@
+<view>
+  <view class='userInfo'>
+    <image class='userImg' src='../../images/touxiang.jpg'></image>
+    <view class='userName'>橙子</view>
+  </view>
+  <view class='notice list'><view class='content'><i></i>通告</view></view>
+  <view class='collection list'><view class='content'><i></i>收藏</view></view>
+  <view class='registCard list'><view class='content'><i></i>报名卡</view></view>
+  <view class='share list'><view class='content'><i></i>分享</view></view>
+  <view class='advice list'><view class='content'><i></i>意见反馈</view></view>
+  <view class='theRole list'><view class='content'><i></i>平台规则</view></view>
+</view> 

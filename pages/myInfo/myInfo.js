@@ -1,12 +1,11 @@
-// pages/detail/detail.js
+// pages/help/help.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tonggaoDetail:'',
-    maxlength:500
+  
   },
 
   /**
@@ -27,7 +26,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    wx.setNavigationBarTitle({
+      title: '我的'
+    })
   },
 
   /**
@@ -63,24 +64,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  computedNum:function(e){
-    this.setData({
-      tonggaoDetail:e.detail.value
-    })
-  },
-  submit:function(){
-    var that = this;
-    getApp().globalData.tosetting = {
-      _tonggaoDetail: that.data.tonggaoDetail
-    };
-    wx.switchTab({
-      url: '../release/release',
-      success: function (res) {
-        wx.setNavigationBarTitle({
-          title: '发布公告'
-        })
-      }
-    })
   }
-})
+}) 

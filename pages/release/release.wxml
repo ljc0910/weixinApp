@@ -1,0 +1,57 @@
+<view class='setting'>
+  <view class="coverBox">
+    <view wx:if='{{alertBox}}'>请输入开始时间</view>
+    <view wx:if='{{warnBox}}'>结束时间不能小于开始时间</view>
+  </view>
+  <form>
+    <view class="tonggaoType iBox">
+        <picker mode = 'selector' class='selector' range='{{tonggaoType}}' value='{{typeNum}}' bindchange='typeChange'>
+          <view wx:if="{{typeNum}}">{{tonggaoType[typeNum]}}</view>
+          <view wx:else>通告类型</view>
+        </picker>
+    </view>
+
+    <view class='tonggaoLabel iBox'>
+        <view wx:if="{{typeNum}}" class='labelBox'>
+           <view  wx:for='{{labelGroup}}' class='labelContent'>{{item}}</view > 
+           <view class='slot'></view>
+        </view>
+         <view wx:else>通告标签</view>  
+    </view>
+
+    <view class="timeArea iBox">
+        <picker class='pickerDate' bindchange='startChange' mode = 'date' value='{{startTime}}'>
+          <view wx:if="{{startTime}}">{{startTime}}</view>
+          <view wx:else>活动开始时间</view>
+        </picker>
+        <span>-</span>
+        <picker class='pickerDate' mode = 'date' bindchange='endChange'>
+          <view wx:if="{{endTime}}">{{endTime}}</view>
+          <view wx:else>活动结束时间</view>
+        </picker>
+    </view>
+
+    <view class="salary iBox">
+        <picker mode = 'selector' class='selector' range='{{salaryArr}}' value='{{salary}}' bindchange='salaryChange'>
+          <view wx:if="{{salary}}">{{salaryArr[salary]}}</view>
+          <view wx:else>填写工资</view>
+        </picker>
+    </view>
+    
+    <view class='tonggaoDetail iBox' bindtap='routerToDetail'>
+        <view wx:if='{{_tonggaoDetail}}' class='textArea'>{{_tonggaoDetail}}</view>
+        <view wx:else class='textArea' style='color:#ccc'>通告详情</view>
+    </view>
+    <view class='weixinNum iBox'>
+      <input type='text' adjust-position='true' placeholder='报名微信号'></input>
+    </view>
+    <view class='emailNum iBox'>
+      <input type='text' adjust-position='true' placeholder='报名邮箱'></input>
+    </view>
+    <view class='phoneNum iBox'>
+      <input type='number' adjust-position='true' placeholder='报名手机号'></input>
+    </view>
+  </form>
+  
+    <button hover-class="none" bindtap='submit'>发布</button>
+</view> 

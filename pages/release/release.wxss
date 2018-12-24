@@ -1,0 +1,24 @@
+/* pages/setting/setting.wxss */ 
+.setting{overflow: auto;height: 100%;}
+.coverBox{font-size: 24rpx;display:inline-block;position: absolute;left: 50%;top: 50%;}
+.coverBox view{position: relative;left: -50%;top: -50%;padding:6rpx 22rpx;background: #ccc;border-radius: 18rpx;}
+form{padding:0 3%;display:block;width:94% ;font-size: 32rpx;background: #fff;margin-top: 10rpx;}
+.iBox{height:100rpx;border-bottom:1rpx solid #ccc;line-height: 100rpx;}
+.tonggaoType::before{font-family:'iconfont';content: '\e608';float: left;vertical-align: middle;margin-right:40rpx ;font-size: 40rpx; }
+.tonggaoLabel::before{font-family:'iconfont';content: '\e6c5';float: left;vertical-align: middle;margin-right:40rpx ; font-size: 40rpx;}
+.timeArea::before{font-family:'iconfont';content: '\e829';float: left;vertical-align: middle;margin-right:40rpx ; font-size: 40rpx;}
+.salary::before{font-family:'iconfont';content: '\e702';float: left;vertical-align: middle;margin-right:40rpx ; font-size: 40rpx;}
+.tonggaoDetail::before{font-family:'iconfont';content: '\e74e';float: left;vertical-align: middle;margin-right:40rpx ; font-size: 40rpx;}
+.weixinNum::before{font-family:'iconfont';content: '\e60a';float: left;vertical-align: middle;margin-right:40rpx ; font-size: 40rpx;}
+.emailNum::before{font-family:'iconfont';content: '\e68b';float: left;vertical-align: middle;margin-right:40rpx ; font-size: 40rpx;}
+.phoneNum::before{font-family:'iconfont';content: '\e646';float: left;vertical-align: middle;margin-right:40rpx ; font-size: 40rpx;}
+.timeArea picker{float: left;width:195rpx ;}
+.timeArea span{float: left;padding:0 40rpx ;}
+.tonggaoDetail{height: auto;}
+.tonggaoDetail .textArea{width: 80%;padding:30rpx 8% 30rpx 12%;min-height:200rpx ;line-height:40rpx ;word-break:break-all;}
+.iBox input{float:left;margin-top:24rpx;}
+.tonggaoLabel{min-height:100rpx ;height: auto;}
+.tonggaoLabel view{height: auto;display: flex; flex-wrap:wrap;}
+.tonggaoLabel .labelContent{border: 1px solid #e4617d;line-height:36rpx;font-size: 20rpx;padding:0 30rpx ;border-radius: 20rpx;margin-right:10rpx;margin-top: 10rpx;color: #e4617d;}
+.slot{display:block;width:750rpx ;padding: 5rpx 0; }
+button{font-size: 32rpx;background:#e4617d;width: 90%;color: #fff;margin: 20rpx auto 0;margin:40rpx auto 60rpx;}

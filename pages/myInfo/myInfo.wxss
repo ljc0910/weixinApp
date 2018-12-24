@@ -1,0 +1,19 @@
+/* pages/help/help.wxss */ 
+view{font-family: '微软雅黑'}
+.userInfo{height:110rpx ;padding: 24rpx 0;background: #fff;margin-top: 20rpx;}
+.userImg{width: 110rpx;height: 110rpx;float: left;margin-left:24rpx;}
+.userName{font-size: 28rpx;font-weight: bold;float: left;line-height: 110rpx;margin-left: 38rpx;}
+.list{padding:0 32rpx ;background: #fff;}
+.list .content{height:28rpx;line-height:28rpx;font-size: 28rpx;padding:34rpx 0 ;}
+ .list i::before{padding:0 42rpx 0 10rpx;} 
+.notice{margin: 20rpx 0;}
+.notice i::before{font-family: 'iconfont';content: '\e608';}
+.collection .content{border-bottom: 0.5rpx solid #e3e3e3;}
+.collection i::before{font-family: 'iconfont';content: '\e646';}
+.registCard{margin-bottom: 20rpx;}
+.registCard i::before{font-family: 'iconfont';content: '\e619';}
+.share i::before{font-family: 'iconfont';content: '\e64a';}
+.share .content{border-bottom: 0.5rpx solid #e3e3e3;}
+.advice i::before{font-family: 'iconfont';content: '\e609';}
+.advice .content{border-bottom: 0.5rpx solid #e3e3e3;}
+.theRole i::before{font-family: 'iconfont';content: '\e716';}
